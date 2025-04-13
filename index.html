@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nonprofit Landing Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    <!-- Add your HTML here -->
+  <header class="navbar">
+    <img src="charitywater_logo_horizontal_BlackText.png" alt="Charity Water Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#">Take Action</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Why Water?</a></li>
+        <li><a href="#" class="give-btn">Give Water</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1><span class="highlight">Be the drop</span> that<br>starts the wave.</h1>
+      <p>See the real change your support makes—<br>every dollar funds clean water and fuels a<br>movement led by people like you.</p>
+      <form>
+        <input type="text" placeholder="Join the movement." aria-label="Email input">
+        <button type="submit">Donate Today</button>
+      </form>
+    </div>
+    <div class="hero-image">
+      <img src="cp_hero.jpg" alt="Smiling girl holding clean water">
+    </div>
+  </section>
+
+  <!-- Donation Section -->
+  <aside class="donation-box">
+    <h2>Donate Monthly</h2>
+    <ul>
+      <li><span class="drop">💧</span> $10 USD/month</li>
+      <li><span class="drop">💧💧</span> $20 USD/month</li>
+      <li><span class="drop">💧💧💧</span> $30 USD/month</li>
+    </ul>
+  </aside>
 </body>
 </html>

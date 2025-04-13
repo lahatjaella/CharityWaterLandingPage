@@ -1,2 +1,143 @@
-/* Add your styles for the page here */
+body {
+  margin: 0;
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  background-color: #FFF7E1;
+  color: #1A1A1A;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo {
+  height: 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1A1A1A;
+  font-weight: 500;
+}
+
+.give-btn {
+  background-color: #00ADEF;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #FFF7E1;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+.hero .highlight {
+  color: #FFD400;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+form input[type="text"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+form button {
+  background-color: #FFD400;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.donation-box {
+  position: absolute;
+  top: 140px;
+  right: 2rem;
+  background-color: white;
+  border: 3px solid #FFD400;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donation-box h2 {
+  margin-top: 0;
+  color: #1A1A1A;
+}
+
+.donation-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.donation-box li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.drop {
+  margin-right: 0.5rem;
+  color: #00ADEF;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  .donation-box {
+    position: static;
+    margin: 2rem auto;
+    max-width: 300px;
+  }
+}
