@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nonprofit Landing Page</title>
@@ -8,7 +9,7 @@
 </head>
 <body>
   <header class="navbar">
-    <img src="charitywater_logo_horizontal_BlackText.png" alt="Charity Water Logo" class="logo">
+    <img src="charitywater_logo.png" alt="Charity Water Logo" class="logo">
     <nav>
       <ul>
         <li><a href="#">Take Action</a></li>
@@ -25,12 +26,9 @@
       <h1><span class="highlight">Be the drop</span> that<br>starts the wave.</h1>
       <p>See the real change your support makes—<br>every dollar funds clean water and fuels a<br>movement led by people like you.</p>
       <form>
-        <input type="text" placeholder="Join the movement." aria-label="Email input">
+        <input type="number" placeholder="Join the movement." aria-label="Email input">
         <button type="submit">Donate Today</button>
       </form>
-    </div>
-    <div class="hero-image">
-      <img src="cp_hero.jpg" alt="Smiling girl holding clean water">
     </div>
   </section>
 
@@ -38,10 +36,22 @@
   <aside class="donation-box">
     <h2>Donate Monthly</h2>
     <ul>
-      <li><span class="drop">💧</span> $10 USD/month</li>
-      <li><span class="drop">💧💧</span> $20 USD/month</li>
-      <li><span class="drop">💧💧💧</span> $30 USD/month</li>
+      <li><button class="donation-btn">  $10 USD/month  </button></li>
+      <li><button class="donation-btn">  $20 USD/month  </button></li>
+      <li><button class="donation-btn">  $30 USD/month  </button></li>
     </ul>
   </aside>
+
+  <!-- Impact Story Section -->
+  <!-- Impact Story Section -->
+  <section class="impact-story">
+    <div class="story-text">
+      <h2>Real-World Impact</h2>
+      <p>Meet Amina, a student from a rural village in Ethiopia who used to walk hours each day just to collect water. Thanks to supporters like you, her community now has access to clean water just minutes away—giving her more time to study, dream, and thrive.</p>
+    </div>
+    <div class="story-image">
+      <img src="amina.jpg" alt="Amina smiling by a clean water well">
+    </div>
+  </section>
 </body>
 </html>

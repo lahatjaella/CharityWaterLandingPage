@@ -15,7 +15,7 @@ body {
 }
 
 .navbar .logo {
-  height: 40px;
+  height: 70px;
 }
 
 .navbar ul {
@@ -33,28 +33,49 @@ body {
 }
 
 .give-btn {
-  background-color: #00ADEF;
-  color: white;
+  background-color: #78a8ba;
+  color: white !important;
   padding: 0.4rem 1rem;
   border-radius: 5px;
 }
 
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4rem 2rem;
-  background-color: #FFF7E1;
-  flex-wrap: wrap;
+  position: relative;
+  background-image: url('cp_hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 10rem 2rem;
+  min-height: 70vh;
+  text-align: left;
+  padding-left: 6rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .hero-text {
-  max-width: 500px;
+  margin-left: 4rem;
+  transform: scale(1.1);
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.3;
+
+  font-size: 3.5rem;
 }
 
 .hero .highlight {
@@ -62,14 +83,17 @@ body {
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 1rem 0;
+  font-size: 1.6rem;
 }
+
 
 form {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 form input[type="text"] {
@@ -88,21 +112,18 @@ form button {
   cursor: pointer;
 }
 
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
 .donation-box {
+      
   position: absolute;
-  top: 140px;
+  top: 120px;
   right: 2rem;
   background-color: white;
   border: 3px solid #FFD400;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  max-width: 350px;
 }
 
 .donation-box h2 {
@@ -125,9 +146,53 @@ form button {
   color: #00ADEF;
 }
 
+.donation-btn {
+  background-color: #78a8ba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin: 5px 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.donation-btn:hover {
+  background-color: #007c9d;
+}
+
+.impact-story {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background-color: #fff7e1;
+  color: #1A1A1A;
+}
+
+.story-text {
+  max-width: 500px;
+}
+
+.story-text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.story-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.story-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column;
     text-align: center;
   }
 
